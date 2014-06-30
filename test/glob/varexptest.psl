@@ -1,0 +1,11 @@
+
+a,b,c=1,2,3
+ps.namespace['1'] = 'one'
+ps.namespace['2'] = 'two'
+ps.namespace['3'] = 'three'
+echo (%032) (%a%b%c) %%a%% %1%2%3
+
+#expect
+#( ) (123) %a% onetwothree
+
+

@@ -1,0 +1,1 @@
+gnome-terminal --geometry=80x40+400+0 --hide-menubar --window-with-profile=manwindow --title "%s" --execute /usr/bin/elinks %s &

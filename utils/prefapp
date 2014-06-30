@@ -1,0 +1,100 @@
+#!/bin/env python
+# prefapp: chooses the correct program for the job and executes it
+# (C)2004, Mike Miller.  Released under the GPL, vers 2.
+
+import os
+import os.path
+import sys
+import string
+import urlparse
+import fdlib
+from optparse import OptionParser
+
+# init
+parser = OptionParser(usage=
+    'usage: %prog <options> <file1> [files...]', version='1.0')
+parser.add_option('-m', '--mode', dest='mode',
+    help='choose the type of program to run (required).  e.g. edit, view, or man.')
+parser.add_option('-c', '--console', dest='ui', default=None,
+    action='store_true', help='force the use of the console based program.')
+parser.add_option('-g', '--gui', dest='ui', default=None,
+    action='store_false', help='force the use of the gui based program.')
+parser.add_option('-v', '--verbose', dest='verbose', default=False,
+    action='store_true', help='print out the command to be executed.')
+
+options, files = parser.parse_args()
+
+# determine mode if not set
+if options.mode == None:
+    options.mode = os.path.basename(sys.argv[0])
+    if options.mode == 'prefapp':
+        print 'error: mode required'
+        sys.exit(1)
+
+# determine ui
+if options.ui == None:  # automatically
+    # is the window system running?
+    if fdlib.gfx_running():         options.ui = 'gui'
+    else:                           options.ui = 'console'
+elif options.ui == True:            options.ui = 'console'
+elif options.ui == False:           options.ui = 'gui'
+
+# find out what to run, env vars override
+prefbase = 'system/current/console/prefapp/cmds/'
+
+for filename in files:
+
+    file_exists = os.access(filename, os.F_OK)
+    cmd = ''
+    if options.ui == 'console':
+        if options.mode == 'edit':
+            if filename.startswith('http://'):
+                print 'error: There is no console url editor.'; sys.exit(3)
+            elif filename.endswith('.gz'):
+                cmd = fdlib.getpref(prefbase + 'guiedit_gz')
+            else:
+                if os.environ.has_key('EDITOR'):
+                                        cmd = os.environ['EDITOR'] + ' %s'
+                else:                   cmd = fdlib.getpref(prefbase + 'conedit')
+        elif options.mode == 'man':     cmd = fdlib.getpref(prefbase + 'conman')
+        elif options.mode == 'view':
+            if filename.endswith('.gz'):
+                cmd = fdlib.getpref(prefbase + 'conview_gz')
+            else:
+                if os.environ.has_key('PAGER'):
+                                        cmd = os.environ['PAGER'] + ' %s'
+                else:                   cmd = fdlib.getpref(prefbase + 'conview')
+    elif options.ui == 'gui':
+        if options.mode == 'edit':
+            if ( filename.startswith('http://')  or filename.endswith('.html') or
+                filename.endswith('.htm') ):
+                cmd = fdlib.getpref(prefbase + 'guiedit_html')
+            elif filename.endswith('.gz'):
+                cmd = fdlib.getpref(prefbase + 'guiedit_gz')
+            else:
+                if os.environ.has_key('GEDITOR'):
+                                        cmd = os.environ['GEDITOR'] + ' %s'
+                else:                   cmd = fdlib.getpref(prefbase + 'guiedit')
+        elif options.mode == 'man':     cmd = fdlib.getpref(prefbase + 'guiman')
+        elif options.mode == 'view':
+        
+            if filename.endswith('.gz'):
+                cmd = fdlib.getpref(prefbase + 'guiview_gz')
+            elif urlparse.urlparse(filename)[0]: # check for protocol
+                cmd = fdlib.getpref(prefbase + 'guiview_url')
+            elif not file_exists:  #doesn't exist, try as url
+                filename = 'http://' + filename
+                cmd = fdlib.getpref(prefbase + 'guiview_url')
+            else:
+                filename = os.path.abspath(filename)
+                if os.environ.has_key('GPAGER'):
+                                        cmd = os.environ['GPAGER'] + ' %s'
+                else:                   cmd = fdlib.getpref(prefbase + 'guiview')
+
+    if cmd == '':
+        print 'Error: couldn\'t find  preference in: %s%s%s' % (prefbase, options.ui, options.mode)
+        sys.exit(2)
+    
+    cmd = cmd.replace('%s', filename)
+    if options.verbose:  print 'command: {%s}' % cmd
+    os.system(cmd)

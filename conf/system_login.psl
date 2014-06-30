@@ -1,0 +1,10 @@
+
+# this is the pyshell systemwide init script
+# put all settings needed for everyone on the system here
+
+echo Welcome to PyShell (loading sitewide init script)
+
+alias cd..=cd ..
+alias view="prefapp -m view -o %{PYSHELL_OPTIONS}"
+alias edit="prefapp -m edit -o %{PYSHELL_OPTIONS}"
+alias  man="prefapp -m man -o %{PYSHELL_OPTIONS}"

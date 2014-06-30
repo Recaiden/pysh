@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>Pyshell 0.91</title>
+<style type="text/css">
+<!--
+
+h1, h2, h3 { 
+    font-family:  arial, sans-serif;
+}
+
+body {
+	margin: 0 0 0 0;
+    font-family:  georgia, times, serif;
+}
+
+.header {
+    color: #aaaaaa;
+	background: #181840;
+    padding: 10px 50px;
+	border-bottom: 2px solid #ffffff;
+}
+.footer {
+    color: #aaaaaa;
+	background: #181840;
+    padding: 20px 50px;
+	border-top: 2px solid #ffffff;
+}
+
+.content { 
+    padding: 20px 50px; 
+}
+
+.console {
+    font-family: monospace;
+    background-color: #181840;
+    color: #aaaaaa;
+    border: inset 1px;
+    white-space: pre
+}
+
+pre {
+    font-family: monospace;
+    background-color: #181840;
+    color: #aaaaaa;
+    border: inset 1px;
+    white-space: pre
+}
+-->
+</style>
+</head>
+<body>
+<div class="header">
+<img align="right" src="shell.png">
+<img align="right" src="pyb.png">
+<h1>Pyshell 0.91</h1>
+</div>
+
+<div class="content">
+<h2>Intro</h2>
+<blockquote>
+<p>Pyshell is an attempt to create a modern command shell comparable to bash, tcsh, or zsh in the python language.  This allows one to create scripts with the brevity of a shell scripting language while also having access to python's fantastic string and list functionality, as well as all the goodies of the standard library. 
+
+<p>However, pyshell is intended for interactive use, simple scripting and batch jobs.  Pyshell may not have every feature ever implemented in a shell, however it will probably have a few neat things others never dreamed of, thanks to Python.   As an application script scales in complexity, it should generally be converted to Python, an elegant programming language.  This is to avoid the 'our resource allocation "system" is written in csh!!' syndrome.  I have seen this type of thing happen in the real world too many times. ;)
+
+<p>The shell works much like others you may have used, and is built using facilities from the standard python interactive prompt.  It also includes a new set of internal commands to simplify the simple things that are syntactically clumsy in python.
+
+<p>I chose the name 'pyshell' because the more common names sounded like different things you might do in the bathroom.  What do psh and pysh make you think of?  I realize the name clashes with some other known python projects.  I'm sorry about that, and if you have a better idea for a name, let me know. 
+
+<p>Design goals for pyshell (in order)
+<ol><li>Keep reasonably lean and mean<br>
+        When pyshell is not enough, user should switch to python</li>
+    <li>Conform to python syntax as much as possible, to ease porting</li>
+    <li>Conform to bash features/syntax as much as possible for easy learning curve
+    <li>Use cool features from python</li>
+    <li>Borrow any other cool features from other shells, eg. bash, tcsh, zsh,
+        that are easy to implement</li>
+    <li>Provide verbose and terse options for newbies and powerusers alike.</li>
+</ol>
+</blockquote>
+
+<h2>Call for help</h2>
+<blockquote>I didn't really know what I was doing
+when writing this thing... I found no tutorials on how to
+write a command shell ...&nbsp; so let the snickering commence. I'm
+sure many things could be done better, (for
+example I'd like to use a real parser), but now that most things work,
+I'm ready to get some feedback from python and/or C gurus and/or help
+from anyone who wants to give it. When starting this project I didn't
+realize how many features a modern shell has and could use any help I
+can get. The bright side is that a new feature typically only takes a
+few lines of python to add.<br>
+<br>
+Someone who could help with the parsing module named <a href="http://pyparsing.sourceforge.net/">pyparsing</a> or subversion would be handy too.<br>
+</blockquote>
+
+<h2>Disclaimer and (lack of) Warranty</h2>
+<blockquote>
+While most things seem to be working in pyshell, I wouldn't recommend basing your multi-billion-dollar production pipeline, or pacemaker control code with it at this time.  Pyshell comes with absolutely no warranty.  It may kick your dog and run away with your wife without warning, leaving you without legal recourse.   Beware!
+</blockquote>
+
+
+<h2>License:</h2>
+<blockquote>
+<p>Pyshell is licensed under the GNU public license (GPL) version 2, for more
+details see COPYING.txt or <a
+href="http://www.fsf.org/">http://www.fsf.org/</a><br>
+</blockquote>
+
+
+<h2>Mini-Tutorial</h2>
+<blockquote>
+<p>Starting up:<br>
+<ul>
+    <li>Of course, python (2.4+) must be installed.</li>
+    <li>Unpack pyshell, then change into its directory.<br></li>
+    <li>Start pyshell with the command: <br></li>
+        <ul><li>Windows:  pyshell.py  ( or double-click in explorer )<br></li>
+        <li>Posix:    python pyshell.py<br></li></ul>
+</ul>
+        
+    <p>Pyshell will attempt to create its configuration files from copies in the
+    conf/ folder if they don't exist already.
+</ul>
+
+<p>Pyshell commands:<br>
+<blockquote>Get a list of commands with the command: help commands  
+<pre>
+
+    pyshell> help commands
+    Pyshell <version>  Help Center
+
+    ... blah ...
+
+</pre>
+</blockquote>
+            
+<p>Variables:<br>
+<blockquote>Expanding python variables, is done by default with the '%' char, instead of '$' (However, this can be changed by setting po.sym_expansion)
+<pre>
+
+    pyshell> z = 5                          # regular python statements
+    pyshell> print 'z = %s' % z
+    z = 5
+
+    pyshell> echo "the value of z is: %z"   # pyshell statements
+    the value of z is: 5
+    pyshell> po.sym_expansion = '$'
+    pyshell> echo "the value of z is: %z"   # no worky
+    the value of z is: %z
+    pyshell> echo "the value of z is: $z"   # Jah!  Das ist gut!
+    the value of z is: 5
+    pyshell> echo %{SHELL}                 # Expanding an environment var
+    /bin/bash                              # Doh!
+
+</pre>
+</blockquote>
+            
+<p>Conditional Branching and Looping (if, while, for):
+<blockquote>
+    Looping and branch constructs work but the implementation is very primitive at this time.  I wouldn't get too fancy with them.  
+    Note blocks do not have to be indented as in python, and although recommended, it is done automatically.  This is helpful in interactive mode.
+    The block ends at the first blank line encountered.  Use the # comment
+    character to add spacing lines.
+<pre>
+
+    a = 5
+    if a == 5:
+        print 'yes!'
+    <cr>
+    # Block ended
+
+</pre>
+</blockquote>    
+
+<p>Pyshell also supports other helpful syntax:
+<blockquote>
+    Globbing:
+<pre>
+
+    > ls -l l* b??
+    drwxr-xr-x  2 mgmiller  144 Aug 24 23:22 bak/
+    drwxrwxrwx  3 mgmiller 1.3k Feb  7 22:17 bin/
+    drwxr-xr-x  3 mgmiller  304 Feb  2 23:42 lib/
+
+</pre>
+
+    <br>Command substitution:
+<pre>
+
+    > dir `which ssh`
+    -rwxr-xr-x  1 root 237k Oct 20 22:36 /usr/bin/ssh*
+    
+</pre>
+
+    <br>Brace expansions:
+<pre>
+
+    > echo filename.{txt,pdf}
+    filename.txt filename.pdf
+
+</pre>
+    
+    <br>Home folders:
+<pre>
+
+    > echo ~mgmiller
+    /home/mgmiller
+
+</pre>
+
+    <br>History substitution:
+<pre>
+
+    > !ech
+    echo ~mgmiller
+    /home/mgmiller
+
+</pre>
+
+    <br>I/O redirection:
+<table><tr><td valign="top">
+
+input: 
+here:   
+
+output: 
+output append: 
+
+error: 
+error append: 
+
+out+err: 
+out+err appd: 
+
+</td><td class="console">        
+
+less < README.txt                                
+/bin/cat << END   ( not working again!! )        
+                                                 
+df > /dev/null                                   
+df >> diskinfo.txt                               
+                                                 
+grep -q >e> greperr.txt                          
+grep -q >e> greperr.txt                          
+                                                 
+du >3>  diskinfo.txt                             
+du >3>> diskinfo.txt 
+
+</td>                            
+</tr></table>
+</blockquote>
+</blockquote>
+
+<h2>Tips</h2>
+<blockquote>
+
+<p>The objects po (pyshell options, read write) and pi (pyshell info, readonly) allow one to get important info on what is happening in the shell.
+<blockquote><pre>
+
+    pyshell> print dir(po)  # these can be set to change properties
+    ['alias_expanded', 'aliases', 'args', 'audio', 'color', 'colorprompt', 
+    'colors', 'configpath', 'jobs', 'keywords', 'namespace', 'opts', 
+    'process_file', 'prompt', 'status', 'sym_expansion', 'title', 
+    'wasunglobbed']
+        
+    > print dir(pi)  # these are read only
+    ['branch_words', 'name', 'sym_cmdsub', 'sym_cont', 'sym_contback', 
+    'sym_contchars', 'sym_contfail', 'sym_contsuccess', 'sym_globchars', 
+    'sym_loopsplit', 'sym_metachars', 'sym_pipe', 'sym_quotes', 'sym_rerr', 
+    'sym_rerr_app', 'sym_rin', 'sym_rin_here', 'sym_rout', 'sym_rout_app', 
+    'sym_routerr', 'sym_routerr_app', 'sym_splitchars', 'version']
+
+</pre></blockquote>
+    
+    
+<p>A good way to exit quickly from a big command line: <br>
+<blockquote>
+    ^C (^=Ctrl key) then exit: ^D (^Z, enter windows)  (I broke this recently)
+</blockquote>
+
+<p>Using pyshell to pre-process python code with the py command:
+<blockquote><pre>
+    
+    pyshell> py print \"%{USERNAME}\"  # still a bit clumsy sorry
+    mgmiller
+    pyshell> py print \"`date`\"
+    Sun Aug 28 02:04:37 ART 2005
+    pyshell> py -q write foo.txt wb
+    execs -->  write('foo.txt', 'wb')
+
+</pre></blockquote>
+
+</blockquote>
+
+<h2>Known limitations</h2>
+<blockquote>Job control doesn't work at all<br>
+&lt; &gt; chars can't be before the pyshell keyword<br>
+Loops are very lame:<br>
+&nbsp;&nbsp; &nbsp;   no else after if<br>
+</blockquote>
+
+<h2>Future Directions</h2>
+<blockquote>
+
+<p>Use pyparsing for parsing?<br>
+Internationalization<br>
+Improve speed<br>
+</blockquote>
+
+</div>
+
+<div class="footer">
+<a href="http://sourceforge.net">
+    <img align="right" src="http://sflogo.sourceforge.net/sflogo.php?group_id=161014&amp;type=1" 
+        width="88" height="31" border="0" alt="SourceForge.net Logo" />
+</a>
+&copy; 2006 Mike Miller
+</div>
+
+</body></html>

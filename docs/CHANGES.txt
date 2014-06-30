@@ -1,0 +1,162 @@
+Pyshell Changelist:   "*" == done
+================================================================
+
+Investigate:  new pyshell features
+
+    - back/forward builtin shell commands / dir history
+    - cmd/output logging
+    - pyparsing as a more robust parser
+
+    * auto () and "" nathan gray's lazy python
+    - callable objects get ()
+    - ka ping yee itpl module for string formatting
+    - changes directory without cd command, just excecute the folder
+    - > overwrite warning
+    print "%8d{$my_variable} %-5f{$my_other_variable}\n",
+    - improve url handling with openanything, url parse, urllib, etc section 11.8
+    zsh completion
+        You have all completion functions in a single 1482-line shell script,
+        which is of course the opposite of getting rid of bloat.
+        Zsh does this nicely, by putting completion for each command in its own file.
+        That file is read every time the user presses TAB, so it doesn't have to keep
+        all the 35778 lines of completion scripts in memory.
+
+future 2.0
+    syntax highlighting on prompt also like fish
+
+future 1.1
+    internationalization
+    optimize for speed
+    stylesheets for syntax highlighting, light and dark terminal styles
+    shutil rewritten for better copy/move
+        * multiple move and maybe copy, move to another folder
+    try os.strerror() for standard error messages
+
+    group aliased commands in 'help commands'
+    * fix clash with 'del' reserved word somehow, del x doesn't produce error
+    resumable ftp urls
+    better tab completion
+
+
+1.0 rest (whew)
+
+    put in info() command from dive into python, ch 4 , prints out methods, use
+    type() builtin
+    - DUDE=HOLMES cmd support # use env instead
+    
+    * quoted empty strings should be allowed for posix compliance, e.g. echo dude ''
+    change code
+        except IOError, (errno, strerror):
+            print "I/O error(%s): %s" % (errno, strerror)
+    login or regular shell
+
+0.91
+    - many builtins should only be present on windows
+        fewer builtins results in fewer incompatibilities
+
+0.90
+    Bugs:
+       * fix python quoting problem
+            result: can no longer use shell expansions on python code .. no biggie
+            
+    * pipeline between builtins and system commands
+    * improve help command
+    * !...  history expansions
+
+ 
+    * resumable url copy command (needs testing)
+    * convert builtins to class base (OO)
+        * arg parsing with OptionParser
+        * add -v,-q verbose flag to builtins
+ 
+    * make a short start script
+    * Builtins
+        * document commands
+        * subclass from single class?
+        * standardize return error codes
+
+0.9x
+    Bugs:
+        - >>e> is accepted, but doesnt work.  shouldn't be accepted.
+        - fix redirection
+            drpython *.py > /dev/null >e> /dev/null &
+        * redirection in wrong place, should happen before var expansion
+        * echo %%a%%, %1%
+        * echo %1%2%3
+        *   %2 is simply 2
+        * echo %%dude
+        * unglobbing quoted chars (again)
+        * compound statement in alias not recognized as compound
+        * setenv needs to check for '=' like alias
+        * removal of quotes, bug:  print 'dude', dude
+            solution?  shouldn't interpret on python statement
+        - glob crashes on bad input ( hard to recreate )
+
+
+    Features:
+        * redirection - working again
+            dive in python 142, better way
+        * `...` command substitution - working again
+        * py command check
+        * aliases
+        * set / get env variables
+        *     %(pythonvars)
+        *     %{envvars}
+        *     system exec path ( should handle ourselves)
+
+        * (mostly working) tab completion
+        * separate options into po object
+        * script parameters
+        * clean up namespace
+        * trash, which, commands (need improvement)
+        * pipes
+            - pipes with pyshell and system
+        * background job reimplementation
+            - redirection and background
+        - job control
+            - bg, fg, commands
+            * signal (kill) command
+                how to suspend and bring forward?
+        * loops  - working again
+        new commands
+            start,
+            * signal,
+            * path
+            
+        - signal handling
+            Signal name value       Effect
+            SIGHUP      1           Hangup
+          * SIGINT      2           Interrupt from keyboard
+            SIGKILL     9           Kill signal
+            SIGTERM     15          Termination signal
+            SIGSTOP     17,19,23    Stop the process
+
+
+0.8x
+    bugs:
+        * echo "spicctrl -b 256" -- > spicctrl -b2256
+        * fix redirection
+        * >>
+        glob and expandvars clash
+        * double alias no work
+
+    more bash expansions
+      *  {1,2,3}
+    * rewrite expandvars
+    * << redirection
+    * logout script
+    * history search
+    * fix quote problems.  1 remove before exec
+    * finish copy command with file urls
+    * jobs
+    * escape chars
+    * loops, while and if
+    * exec prompt back in, bash has it
+     
+0.7x
+    * i/o redirection
+
+    * read input from file
+      * initiation files
+
+    * improve copy command, dirs and urls

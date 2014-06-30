@@ -1,0 +1,33 @@
+print dude
+
+if a == 5:
+    print 1  True
+    print 2
+    if a == 5:
+        print 2.5  True; True
+        print 2.6
+        if a == 8:
+            print 2.7  True; True; False
+            print 2.8
+            
+    print 3
+
+if a == 8:
+    print 4  False
+    if a == 5:
+        print 4.5  False; True
+        print 4.6
+        print 4.7
+    print 5
+    print 6
+  
+print 7
+print 8
+print 9
+
+while a == 5:
+    print 11
+    print 12
+    break
+
+print 13

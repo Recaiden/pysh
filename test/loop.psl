@@ -1,0 +1,8 @@
+a = 5
+echo 'start'
+
+if a == 5:
+  echo 'this branch is correct'
+  echo 'dude'
+
+echo end

@@ -1,0 +1,1 @@
+/usr/bin/mozilla -editor %s >& /dev/null &

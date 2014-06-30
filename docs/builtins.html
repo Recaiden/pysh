@@ -1,0 +1,622 @@
+
+<html>
+    <title>Pyshell Builtins, Version: 0.91</title>
+    <meta name="GENERATOR" content="makedocs.py">
+    <!-- This document auto-generated, don't bother to edit. -->
+<body>
+<h1>Pyshell Built-in Commands, Version: 0.91</h1>
+
+<a name="top">[</a>
+<a href="#alias">alias</a> | 
+<a href="#bg">bg</a> | 
+<a href="#cat">cat</a> | 
+<a href="#cd">cd</a> | 
+<a href="#changefolder">changefolder</a> | 
+<a href="#clear">clear</a> | 
+<a href="#cls">cls</a> | 
+<a href="#copy">copy</a> | 
+<a href="#cp">cp</a> | 
+<a href="#currentfolder">currentfolder</a> | 
+<a href="#cwd">cwd</a> | 
+<a href="#dele">dele</a> | 
+<a href="#deltree">deltree</a> | 
+<a href="#dir">dir</a> | 
+<a href="#echo">echo</a> | 
+<a href="#erase">erase</a> | 
+<a href="#evalps">evalps</a> | 
+<a href="#exit">exit</a> | 
+<a href="#fg">fg</a> | 
+<a href="#help">help</a> | 
+<a href="#hist">hist</a> | 
+<a href="#history">history</a> | 
+<a href="#jobs">jobs</a> | 
+<a href="#ll">ll</a> | 
+<a href="#makefolder">makefolder</a> | 
+<a href="#md">md</a> | 
+<a href="#mkdir">mkdir</a> | 
+<a href="#move">move</a> | 
+<a href="#mv">mv</a> | 
+<a href="#path">path</a> | 
+<a href="#pause">pause</a> | 
+<a href="#prompt">prompt</a> | 
+<a href="#pwd">pwd</a> | 
+<a href="#py">py</a> | 
+<a href="#quit">quit</a> | 
+<a href="#rd">rd</a> | 
+<a href="#ren">ren</a> | 
+<a href="#rm">rm</a> | 
+<a href="#setenv">setenv</a> | 
+<a href="#sig">sig</a> | 
+<a href="#signal">signal</a> | 
+<a href="#source">source</a> | 
+<a href="#trash">trash</a> | 
+<a href="#type">type</a> | 
+<a href="#vars">vars</a> | 
+<a href="#ver">ver</a> | 
+<a href="#which">which</a> | 
+]
+
+<p>Note:  many of these commands are aliases to others.
+
+<pre>
+--------------------------------------------------
+<h3><a name="alias">alias</a></h3>
+    alias [-h] [name] [value]
+    
+    alias                   # Print table of current aliases
+    alias -h                # Print help text
+    alias name              # Print aliases that start with 'name'
+    alias name = value...   # Set alias 'name' to 'value'
+    alias name=value...     # "
+    alias name value...     # "
+    alias name=             # Delete an alias
+    
+    An alias can be used to substitute a series of commands by a single word.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="bg">bg</a></h3>
+    bg
+    bg -h
+    
+    bg sends a suspended task to the background.  Not implemented yet.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="cat">cat</a></h3>
+    type <files>
+    
+    type foo
+    type -h
+    
+    type displays files from the command line.
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="cd">cd</a></h3>
+    cd [-h] [folder]
+    
+    cd              # Move to the home folder (~)
+    cd bin          # Move to bin
+    cd -h           # Print help text
+
+    The cd command changes the current working folder to another.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="changefolder">changefolder</a></h3>
+    cd [-h] [folder]
+    
+    cd              # Move to the home folder (~)
+    cd bin          # Move to bin
+    cd -h           # Print help text
+
+    The cd command changes the current working folder to another.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="clear">clear</a></h3>
+    cls [-h]
+    
+    cls         # clear screen
+    cls -h      # Print this useless help text
+    
+    cls clears the console or terminal screen.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="cls">cls</a></h3>
+    cls [-h]
+    
+    cls         # clear screen
+    cls -h      # Print this useless help text
+    
+    cls clears the console or terminal screen.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="copy">copy</a></h3>
+    copy [-h] [source] [destination]
+    
+    copy <source> <destination>     # Copy a file to destination file or folder
+    copy <sources> <dest_folder/>   # Copy files to a folder
+    copy <source>                   # Copy file to current folder[.] implied
+    copy <URL> <destination>        # Copy remote file to destination file, fd.
+    copy -h                         # Print help text
+    
+    copy copies files and folders to another location.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="cp">cp</a></h3>
+    copy [-h] [source] [destination]
+    
+    copy <source> <destination>     # Copy a file to destination file or folder
+    copy <sources> <dest_folder/>   # Copy files to a folder
+    copy <source>                   # Copy file to current folder[.] implied
+    copy <URL> <destination>        # Copy remote file to destination file, fd.
+    copy -h                         # Print help text
+    
+    copy copies files and folders to another location.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="currentfolder">currentfolder</a></h3>
+    pwd [-h]
+    
+    pwd             # Print the current folder
+    pwd -h          # Print help text
+    
+    pwd prints working folder.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="cwd">cwd</a></h3>
+    pwd [-h]
+    
+    pwd             # Print the current folder
+    pwd -h          # Print help text
+    
+    pwd prints working folder.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="dele">dele</a></h3>
+    trash <files>
+    
+    trash foo           # Run file.psl
+    trash -h            # Print help text
+    
+    trash moves files to the trash bin, where they can be later removed
+    or restored.
+    
+    Bug:    if files are on another filesystem, they will be copied
+            to the one with the home folder.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="deltree">deltree</a></h3>
+    deltree [-h] [-f] <files>
+    
+    deltree file1       # Delete file or folder and everything it contains
+    deltree -f file1    # Delete and don't ask for confirmation
+    deltree foo bar     # Delete foo and bar
+    deltree -h          # Print help text
+    
+    deltree wipes out files and whole folders, use with caution.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="dir">dir</a></h3>
+    dir [file | folder]
+    
+    necessary for windows, posix should use an alias to "ls -l" instead.
+    ? could windows use "cmd /c dir" ?
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="echo">echo</a></h3>
+    echo [-h | -n] [messages...]
+    
+    echo            # Prints a blank line
+    echo foo        # Prints msg
+    echo -n foo     # Prints msg without carriage return/new line (\n)
+    echo -h foo     # Prints help message
+    
+    echo displays messages to the console.
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="erase">erase</a></h3>
+    erase [-h | -f] [files...]
+    
+    erase <file>       # Remove file
+    erase *.txt        # Remove all files ending in .txt, after confirmation
+    erase -f file1     # Remove files without confirmation
+    
+    erase deletes files, never to be seen again.  Use with caution.
+    ? should there be an erase and a deltree?
+    ? deltree more powerful, but dangerous 
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="evalps">evalps</a></h3>
+    evalps [-h] <statement>
+    
+    evalps `dircolors -c /etc/DIR_COLORS`   # evaluate line
+    evalps -h                               # Print this message
+    
+    evalps evaluates a string from a command substitution as a new command line.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="exit">exit</a></h3>
+    exit [-h] [status]
+
+    exit        # Quit
+    exit 7      # Quit returning 7 to parent process
+    exit -h     # Print this message
+    
+    exit quits the python shell (pyshell) and returns to the parent process.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="fg">fg</a></h3>
+    not sure how to do this yet ;) NO WORKO.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="help">help</a></h3>
+    Please enter one of the following for more information.  Items in [brackets]
+    are optional.  Usage: help <topic> [options]
+
+    Pyshell:
+    help  intro     [browser]   About pyshell
+          cmddocs   [browser]   built-in commands documentation
+          commands  [command]   list of built-in pyshell commands [or one]
+          
+    Python:
+    help  tutorial  [browser]   launch python tutorial in a web browser
+          modules               list all available python modules
+          topics                list python topics
+          keywords              list python reserved words
+          help                  python interactive help
+          
+          [topic]               help on a module, keyword, or topic
+
+    Search:
+    help  apropos   [query]     search for an appropriate pyshell command
+          modules   [query]     search for an appropriate python module
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="hist">hist</a></h3>
+    history [-h] [search terms]
+
+    history         # Print complete history
+    history foo     # Print only commands containing foo
+    history -h      # Print help text
+
+    history allows you to search and print your command history.
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="history">history</a></h3>
+    history [-h] [search terms]
+
+    history         # Print complete history
+    history foo     # Print only commands containing foo
+    history -h      # Print help text
+
+    history allows you to search and print your command history.
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="jobs">jobs</a></h3>
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="ll">ll</a></h3>
+    dir [file | folder]
+    
+    necessary for windows, posix should use an alias to "ls -l" instead.
+    ? could windows use "cmd /c dir" ?
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="makefolder">makefolder</a></h3>
+    md [-h] [-p] <folder_name>
+    
+    md foo          # Creates the folder foo
+    md foo/bar      # Creates the folder foo with a subfolder bar
+    md -p foo/bar   # Same, for compatibility
+    md -h           # Print help text
+    
+    md creates folders.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="md">md</a></h3>
+    md [-h] [-p] <folder_name>
+    
+    md foo          # Creates the folder foo
+    md foo/bar      # Creates the folder foo with a subfolder bar
+    md -p foo/bar   # Same, for compatibility
+    md -h           # Print help text
+    
+    md creates folders.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="mkdir">mkdir</a></h3>
+    md [-h] [-p] <folder_name>
+    
+    md foo          # Creates the folder foo
+    md foo/bar      # Creates the folder foo with a subfolder bar
+    md -p foo/bar   # Same, for compatibility
+    md -h           # Print help text
+    
+    md creates folders.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="move">move</a></h3>
+    move [-h] <source> [destination]
+    
+    # todo: change below to examples
+    move [-h]                       # Print help text
+    move <source> <destination>     # move a file to destination file or folder
+    move <sources> <dest_folder/>   # move files to a folder
+    move <source>                   # move file to current folder[.] implied
+    move <URL> <destination>        # move remote file to destination file, fd.
+    
+    Move moves files from one location to another.  If the files to be moved are
+    on the same filesystem, they are simply renamed.  Otherwise, move copies
+    files and folders to the destination, then removes the originals.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="mv">mv</a></h3>
+    move [-h] <source> [destination]
+    
+    # todo: change below to examples
+    move [-h]                       # Print help text
+    move <source> <destination>     # move a file to destination file or folder
+    move <sources> <dest_folder/>   # move files to a folder
+    move <source>                   # move file to current folder[.] implied
+    move <URL> <destination>        # move remote file to destination file, fd.
+    
+    Move moves files from one location to another.  If the files to be moved are
+    on the same filesystem, they are simply renamed.  Otherwise, move copies
+    files and folders to the destination, then removes the originals.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="path">path</a></h3>
+    path [-h] [-p <VAR>] [set | pre | add | del] [path or path_fragment]
+    
+    path                        # Print execution path
+    path set /fldr/             # Set path to /fldr/
+    path pre /fldr/             # Prepend current path with /fldr/
+    path add /fldr/             # Append current path with /fldr/
+    path del /fldr/             # Remove /fldr/ from path
+    path -h                     # Print help text
+    path -u XPATH add /fldr/    # Manipulate another environment var., named XPATH
+    
+    path is a helpful utility to manipulate the execution path.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="pause">pause</a></h3>
+    pause           # Wait for a key press
+    pause [-h]      # Print help text
+    
+    pause waits until a user hits a key. (Only Enter key on posix for now)
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="prompt">prompt</a></h3>
+    prompt [-h] [value]
+    
+    prompt 'pyshell> '      # Set prompt
+    prompt -h               # Print help text
+
+    Prompt is a helpful utility to manipulate the command prompt.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="pwd">pwd</a></h3>
+    pwd [-h]
+    
+    pwd             # Print the current folder
+    pwd -h          # Print help text
+    
+    pwd prints working folder.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="py">py</a></h3>
+    py [-h] [-q] [python_statement]
+    
+    py a = 5                # exec "a = 5" in python
+    py -Q dude holmes       # Quote statement, i.e.  dude('holmes', 'homey')
+    py -Q  write dude.{a,b,c}.jpg
+                            # write('dude.a.jpg', 'dude.b.jpg', 'dude.c.jpg')
+    py -h                   # Print help text
+    
+    The py command can execute a python statement, or a function using pyshell
+    syntax and/or expansions.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="quit">quit</a></h3>
+    exit [-h] [status]
+
+    exit        # Quit
+    exit 7      # Quit returning 7 to parent process
+    exit -h     # Print this message
+    
+    exit quits the python shell (pyshell) and returns to the parent process.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="rd">rd</a></h3>
+    deltree [-h] [-f] <files>
+    
+    deltree file1       # Delete file or folder and everything it contains
+    deltree -f file1    # Delete and don't ask for confirmation
+    deltree foo bar     # Delete foo and bar
+    deltree -h          # Print help text
+    
+    deltree wipes out files and whole folders, use with caution.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="ren">ren</a></h3>
+    move [-h] <source> [destination]
+    
+    # todo: change below to examples
+    move [-h]                       # Print help text
+    move <source> <destination>     # move a file to destination file or folder
+    move <sources> <dest_folder/>   # move files to a folder
+    move <source>                   # move file to current folder[.] implied
+    move <URL> <destination>        # move remote file to destination file, fd.
+    
+    Move moves files from one location to another.  If the files to be moved are
+    on the same filesystem, they are simply renamed.  Otherwise, move copies
+    files and folders to the destination, then removes the originals.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="rm">rm</a></h3>
+    erase [-h | -f] [files...]
+    
+    erase <file>       # Remove file
+    erase *.txt        # Remove all files ending in .txt, after confirmation
+    erase -f file1     # Remove files without confirmation
+    
+    erase deletes files, never to be seen again.  Use with caution.
+    ? should there be an erase and a deltree?
+    ? deltree more powerful, but dangerous 
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="setenv">setenv</a></h3>
+    setenv [-h] [-t] [name] [value]
+    
+    setenv                  # Print complete environment
+    setenv foo              # Print variables containing foo in their name
+    setenv DAY Mon          # Set DAY = Mon
+    setenv DAY=Mon          # "
+    setenv DAY = Mon        # "
+    setenv DAY=             # Delete DAY
+    
+    setenv is a helpful utility to manipulate environment variables.  It accepts
+    quite a few different syntax variations.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="sig">sig</a></h3>
+    signal <SIGNAME|name|#|list> <pid1> [pid2..]
+    
+    signal term 1103        # tell 1103 to quit. If it doesn't work, try kill
+    signal SIGTERM 1103     # propeller-head equivalent
+    signal 15  1103         # "
+    signal kill 1103        # brutal last resort
+    signal list             # list the various available signals
+    signal -h               # Print help text
+
+    signal sends signals to processes on posix based systems
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="signal">signal</a></h3>
+    signal <SIGNAME|name|#|list> <pid1> [pid2..]
+    
+    signal term 1103        # tell 1103 to quit. If it doesn't work, try kill
+    signal SIGTERM 1103     # propeller-head equivalent
+    signal 15  1103         # "
+    signal kill 1103        # brutal last resort
+    signal list             # list the various available signals
+    signal -h               # Print help text
+
+    signal sends signals to processes on posix based systems
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="source">source</a></h3>
+    source <file>
+    
+    source file.psl     # Run file.psl
+    source -h           # Print help text
+    
+    source executes commands from a file specified on the command line.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="trash">trash</a></h3>
+    trash <files>
+    
+    trash foo           # Run file.psl
+    trash -h            # Print help text
+    
+    trash moves files to the trash bin, where they can be later removed
+    or restored.
+    
+    Bug:    if files are on another filesystem, they will be copied
+            to the one with the home folder.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="type">type</a></h3>
+    type <files>
+    
+    type foo
+    type -h
+    
+    type displays files from the command line.
+    
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="vars">vars</a></h3>
+    vars [-h]
+    
+    vars        # Print current variables
+    vars -h     # Print help text
+    
+    vars prints the currently available variables.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="ver">ver</a></h3>
+    ver [-h]
+    
+    ver         # Print version info
+    ver -h      # Print help text
+    
+    ver prints the version of the current python shell.
+
+(<a href="#top">top</a>)
+--------------------------------------------------
+<h3><a name="which">which</a></h3>
+    which [-h] <name>
+    
+    which foo       # Print type and/or location of foo
+    which -i foo    # Print complete info about foo
+    which -h        # Print help text
+    
+    which returns the types and locations of commands.
+
+(<a href="#top">top</a>)
+
+</pre>
+</body><html>
+

@@ -1,0 +1,21 @@
+
+# this is the pyshell user's init script
+# put all settings needed for the end user here
+
+# if login shell execute this:  (should be done once)
+
+echo -n Hi, %{USERNAME} (loading user init script) ...
+
+po.audio = False
+ver
+
+cd test
+
+po.audio = True
+
+# load alias file here
+alias ls="ls -A -F --color=auto --si"
+alias dir="ls -l"
+alias cls=clear
+
+echo DONE

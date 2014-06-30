@@ -1,0 +1,3241 @@
+dir
+cls
+history
+setenv
+setenv SHLVL = 2
+setenv
+setenv SHLVL 1 2
+setenv
+setenv SHLVL 1
+setenv
+debug
+echo Welcome to MixMasta Int'l 
+cls
+dir
+cls
+dir
+ls
+cat dude.txt
+cls
+dirr
+dir
+dirr
+debug
+dir
+dir \ 
+dir
+cls
+dir
+cat < dude.
+cat < dude.txt
+/bin/cat < dude.txt
+/bin/cat < dude.txt && echo \nDUDE
+/bin/cat < dude.txt || echo \nDUDE
+cls
+dir
+rm date
+rm dude.txt
+cls
+dir
+date > date
+dir
+rm date
+cls
+cd..
+edit *.py
+dir
+date > date.txt
+debug
+date > date.txt
+dir
+cat date.txt
+/bin/cat < date.txt > cat.txt
+dir
+cat cat.txt
+date >> date.txt
+dir
+cat date.txt
+date -fuck >e>> date.txt
+dir
+cat date.txt
+rm *.txt
+y
+cls
+dir
+date > date.txt
+dir
+cat date.txt
+/bin/cat < date.txt
+/bin/cat < date.txt > cat.txt
+dir
+cat cat.txt
+cls
+date >e> err.txt
+dir
+date -fuck >e> err.txt
+dir
+cat err.txt
+dir
+date -fuck >e>> err.txt
+dir
+cat err.txt
+dir
+rm *.txt
+y
+cls
+dir
+cls
+date > date.txt
+cls
+dir
+date > date.txt
+dir
+cat date.txt
+/bin/cat < date.txt
+/bin/cat < date.txt > cat.txt
+dir
+cat cat.txt
+/bin/cat < date.txt >> cat.txt
+dir
+cat cat.txt
+date -fuck > date.txt
+dir
+date -fuck >e>>  date.txt
+dir
+cat date.txt
+date -fuck >e>>  date.txt
+cat date.txt
+date -fuck >e>  date.txt
+cat date.txt
+cls
+dir
+rm *.txt
+y
+cls
+date -fuck >e>  date.txt
+dir
+cat date.txt
+rm date.txt
+cls
+dir
+cls
+echo %%dude
+dude = 5
+echo %%dude
+alias
+print ps.aliases
+print ps.aliases['ls']s
+print ps.aliases['ls']
+alias
+cls
+setenv
+cls
+debug
+echo `date`
+a = `date`
+setenv date =  `date`
+setenv
+setenv date  `date`
+setenv
+echo `date` `date `
+echo `date `
+debug
+echo `date `
+echo `date`
+echo `date` `ps -ef `
+echo The date is `date` `ps -ef `
+echo The date is `date` and the time is `date `
+setevn DUDE `whoami`
+setenv DUDE `whoami`
+setenv
+setenv DUDE `whoami`
+setenv
+whoami
+debug
+setenv DUDE `whoami`
+setenv DUDE `whoami `
+debug
+setenv DUDE `whoami `
+setenv
+debug
+setenv DUDE `whoami `
+ echo `date` `ps -ef`
+setenv DUDE `whoami `
+setenv d
+py print dude
+debug
+py print dude
+debug
+import os
+py -q dir os
+py -q pdir os
+py -q print pdir os
+setenv
+py print %{USERNAME}
+debug
+py print %{USERNAME}
+setenv
+py print %{USERNAME}
+debug
+py print %{USERNAME}
+debug
+py print %{USERNAME}
+py print \"%{USERNAME}\'
+py print \"%{USERNAME}\"
+history
+py print \"`date`\
+py print \"`date`\"
+debug
+py print \"`date`\"
+history
+py print \"`date`\"
+help commands
+cls
+help commands
+print __builtins__.dir()
+pwd
+print ps_builtins.pwd()
+cd..
+edit *.py
+pyshell -h
+pyshell --help
+debug
+pyshell --help
+alias
+python --help
+pyshell --help
+pyshell -h
+alias python
+alias python =
+alias python = ''
+alias
+alias python=
+alias
+pyshell -h
+pyshell
+cls
+dir
+cd test
+dir
+date > date
+dir
+cat date
+dir
+/bin/cat date
+debug
+ps.opts.debug = False
+dir
+cat date
+rm date
+cls
+dir
+cls
+pyshell -h
+alias e
+alias e = echo
+alias e
+e; e ; e;
+e 111111; e 222222222 ; e 33333333;
+alias e = 'e 1; e 2'
+alias e
+e ; e ; e ;
+alias e = 'e 1; e 2'
+e ; e ; e ;
+alias e = 'e 1; e 2'
+e ; e ; e ;
+alias e = 'e 1; e 2'
+e ; e ; e ;
+alias e = 'echo 1; echo 2'
+e ; e ; e ;
+cls
+dir
+pyshell -h
+pyshell 
+cls
+setenv
+setenv DUDE      ; setenv DUDE
+setenv DUDE=      ; setenv DUDE
+setenv DUDE=mike      ; setenv DUDE
+setenv DUDE= mike      ; setenv DUDE
+setenv DUDE = mike      ; setenv DUDE
+setenv DUDE
+setenv DUDED=
+setenv D
+setenv DUDE
+setenv DUDE=
+setenv DUDE=mike
+setenv DUDE
+setenv DUDE=
+setenv DUDE
+setenv DUDE=
+setenv DUDE ''
+debug
+setenv DUDE ''
+setenv DUDE = holmes
+setenv DUDE
+setenv D
+setenv DUDE = holmes
+debug
+setenv DUDE = holmes
+setenv D
+setenv DUDE = holmes
+setenv D
+setenv DUDE= holmes
+setenv D
+setenv DUDE = holmes
+setenv D
+setenv DUDE= holmes
+setenv D
+setenv DUDE =holmes
+debug
+setenv DUDE =holmes
+setenv D
+setenv DUDE x=holmes
+setenv D
+setenv DUDE x=holmes
+setenv D
+cd..
+ls
+./test_ps.py
+a = 5
+echo %a
+echo sp{1,2,3}a
+debug
+echo sp{1,2,3}a
+cls
+debug
+echo dude & echo holmes
+jobs
+sleep 60 &
+jobs
+sleep 60 &
+jobs
+sleep 60 &
+dir
+cd..
+ls
+dir
+./slowcmd
+./slowcmd &
+./slowcmd
+slowcmd
+../slowcmd
+../slowcmd & echo dude
+../slowcmd > slow.txt >e>> slowerr.txt
+dir
+cat slow.txt
+cat slowerr.txt
+rm *.txt
+y
+cls
+dir
+../slowcmd > slow.txt >e>> slowerr.txt & echo dude
+dir
+rm slow.txt
+dir
+rm slowerr.txt
+dir
+cls
+dir
+cd..
+cls
+slowcmd
+slowcmd &
+cd..
+slowcmd &
+cd..
+slowcmd &
+echo dude
+echo holmes
+dir
+jobs
+slowcmd &
+echo dude
+jobs
+cd..
+slowcmd &
+jobsjobs
+jobs
+cls
+gedit slowcmd &
+gedit &
+dkfkdf
+cd..
+gedit &
+cd..
+gedit &
+cls
+deir
+dir
+cls
+dir
+date > date.txt
+dir
+cat date.txt
+dir
+/bin/cat < date.txt > cat.txt
+dir
+cat cat.txt
+cat cat.txt >> date.txt
+dir
+cat date.txt
+grep -q
+grep -q > grep.txt
+grep -q >e> grep.txt
+dir
+cat grep.txt
+rm grep.txt
+cls
+dir
+cls
+help commands
+ls
+dir
+source sample.psl
+edit sample.psl
+print 'ps.opts.verbose:', ps.opts.verbose
+ps.opts.verbose
+print ps.opts.verbose
+print 'ps.opts.verbose:', ps.opts.verbose
+debug
+print 'ps.opts.verbose:', ps.opts.verbose
+dir
+rm *.txt
+y
+cls
+ls
+echo *.psl
+debug
+echo *.psl
+echo '*.psl'
+echo *.psl
+debug
+echo '*.psl'
+echo *.psl
+echo `echo *.psl`
+debug
+echo `echo *.psl`
+cls
+debug
+ps.opts.debug = False
+cls
+acpitool
+debug
+echo spicctrl%032-b%032256
+echo "spicctrl -b 256"
+debug
+echo "spicctrl -b 256"
+debug
+echo "spicctrl -b 256"
+dir
+sleep 60 &
+jobs
+cd..
+ls
+./slowcmd &
+jobs
+fg 1
+./slowcmd &
+cd..
+./slowcmd &
+jobs
+fg 1
+cd..
+./slowcmd &
+jobs
+fg 1
+cls
+./slowcmd &
+fg 0
+jobs
+./slowcmd &
+fg 0
+fg 1
+jobs
+sleep 60 &
+jobs
+fg 1
+fg 0
+print ps.jobs
+print ps.jobs[0]
+print ps.jobs[1]
+./slowcmd &
+jobs
+fg 1
+fg 1cls
+cls
+jobs
+sleep 60 &
+jobs
+fg 1
+cd..
+dir
+cls
+jobs
+sleep 60 &
+jobs
+fg 1
+dir
+cd test
+dir
+date > date.xt
+dir
+del date.xt
+cls
+dir
+cls
+cd..
+jobs
+sleep 60 &
+jobs
+fg 1
+cls
+cd..
+jobs
+sleep 60 &
+jobs
+fg 
+fg 1
+fg
+sleep 60 &
+jobs
+fg 1
+sleep 60 &
+jobs
+fg 1
+sleep 60 &
+jobs
+cd..
+print int('45')
+print int('45a')
+man signal
+man kill
+cls
+gedit &
+signal
+signal term 1103
+gedit &
+signal term 8713
+cls
+gedit &
+debug
+signal term 8728
+gedit &
+fps mgmiller
+ps -ef | grep mgmiller
+signal kill 8730
+gedit &
+signal stop 8734
+signal cont 8734
+signal 15 8734
+signal 15 8799
+cls
+bg
+cls
+debug
+exit
+which ipy
+which ipython
+man most
+color
+color --list
+cls
+kskdsfkdf
+dir
+setenv C
+setenv l
+setenv col
+setenv line
+setenv col
+setenv line
+setenv col
+setenv line
+cls
+setenv col
+setenv line
+setenv col;setenv line
+cls
+grep sys.platform *.py
+cd..
+grep sys.platform *.py
+cd..
+grep sys.platform *.py
+cls
+wc -l *.py
+cls
+print ps.prompt
+print ps_lib
+ps.color = False
+cls
+dir
+cd
+exit
+cls
+ddddddddddddddddddddddddd
+dir
+ddddddddddddddddddddddddddddddddddddddddddddd
+cls
+print ps.prompt
+cls
+ps.prompt
+man readline
+cls
+dir
+lsdkajf
+cls
+dddddddddddddddddddddddddddddddddddddddd
+cls
+dir
+hello!
+cls
+dir
+cls
+dir
+rm date.xt
+cls
+dir
+cd..
+dir
+./test_ps.py
+cls
+cd
+ls
+cd Desktop
+dir
+cd stuff
+cls
+dir
+elinks anandteck.html
+exit
+cls
+ls
+cls
+dir
+cd..
+edit *.py
+if True: echo dude
+echo dude \
+holmes \
+okay
+cd..
+grep branch *.py
+grep -n branch *.py
+ls
+cd test
+ls
+cat sample.psl
+debug
+source sample.psl
+cls
+cd..
+cls
+ls
+debug
+cls
+cd..
+grep getinput *.py
+debug
+echo dude; echo holmes
+echo dude: echo holmes
+a = 5
+echo "%a"
+echo "%a'
+echo '%a'
+echo "%%a"
+  echo dude
+rm p
+rm pseudo.py.py
+rm pseudo.py
+cls
+dir
+cls
+cd..
+edit loop.txt
+./looptest.py
+python looptest.py
+cls
+python looptest.py
+cls
+python looptest.py
+cls;python looptest.py
+signal list
+source dude
+source
+source dude
+signal list
+man kill
+signal list
+cls
+signal list
+import signal
+print signal.SIGHUP
+print signal.SIGHUP.__doc__
+cls
+signal list
+pause
+reset
+signal list
+cls
+sig list
+ps.color = False
+sig list
+ps -ef | grip adobe
+ps -ef | grip acro
+sig SIGCHLD 18469
+sig term  18469
+cls
+sig list
+sig 
+cls
+sig 
+ps
+ps -ef | grip acro
+sig list
+sig 20 18561
+sig list
+sig 19 18561
+sig 19 18561 18561
+print ps.options
+print ps.opts.verbose
+ps.opts.verbose = True
+sig 19 18561 18561
+ps.opts.verbose = True
+sig 19 18561 18561
+ps.opts.verbose = True
+sig 19 18561 18561
+ps.opts.verbose = True
+sig 19 18561 18561
+sig list
+sig stop  18561 18561
+sig cont  18561 18561
+cls
+sig list
+ps.opts.verbose = True
+sig cont  18561 18561
+sig cont  18561
+cls
+help commands
+ver
+which ver
+which quit
+debug
+which ver
+print ps.keywords
+which ver
+which ls
+which print
+cls
+which cls print ver bash
+help commands
+signal
+signal list
+signal
+cls
+signal list
+sig
+signal list
+debug
+signal list
+ls
+date > date.txt
+dir
+cat date.txt
+alias
+alias del rm
+alias d
+alias del
+ls
+dir
+del date.txt
+dir
+help
+help keywords print
+help tutorial
+ls
+cd..
+dir
+cls
+ls
+././././slowcmd
+debug
+slowcmd
+cd..
+slowcmd
+cd..
+slowcmd
+cd..
+slowcmd
+cd..
+slowcmd
+ps -ef | grep mgmiller
+./slowcmd | grep -i step
+cd..
+slowcmd
+dir
+ps -ef | grep mgmiller | grep fire
+debug
+ps -ef | grep mgmiller | grep fire
+ps -ef | grep mgmiller | grep fire | grep fire
+debug
+ps -ef | grep mgmiller | grep fire | grep fire
+ps -ef | grep mgmiller | grep fire | grep fire | grep moz
+debug
+ps -ef | grep mgmiller | grep fire | grep fire | grep moz
+debug
+ps -ef | grep mgmiller | grep fire | grep fire | grep moz
+ps -ef | sort  | grep fire | grep fire | grep moz
+debug
+ps -ef | sort  | grep fire | grep fire | grep moz
+ps -ef | grep mgmiller | grep fire
+ps -ef | grep mgmiller | sort
+ps -ef | grep mgmiller | grep fire
+ps -ef | grep mgmiller | sort 
+debug
+ps -ef | grep mgmiller | grep fire
+ps -ef | grep mgmiller | sort 
+debug
+ps -ef | grep mgmiller | sort 
+ps -ef | grep mgmiller | grep fire
+exit
+ps -ef | grep mgmiller | grep fire
+exit
+ps -ef | grep mgmiller | grep fire
+ps -ef | grep mgmiller | grep fire > grep.txt
+dir
+cat grep.txt
+rm grep.txt
+ps -ef | grep mgmiller | grep fire | grep -u > grep.txt
+cat grep.txt
+dir
+ps -ef | grep mgmiller | grep fire | grep -u >e> grep.txt
+dir
+cat grep.txt
+dir
+rm grep.txt
+cls
+ls
+cd..
+dir
+cls
+ls
+grep 'args[' *.py
+fgrep 'args[' *.py
+grep -f 'args[' *.py
+man grep
+grep -F 'args[' *.py
+grep -n -F 'args[' *.py
+jobs
+alias man
+signal list
+./slowcmd
+cd..
+./slowcmd
+signal list
+echo dude ''
+echo dude '' holmes
+debug
+echo dude '' holmes
+debug
+echo dude '' holmes
+debug
+echo dude '' holmes
+exit
+echo dude '' holmes
+dir
+date > date.txt
+dir
+vim date.txt
+cls
+ls
+rm date.txt
+cls
+dir
+ps -ef | grep root
+grep root *
+grep echo *
+dir
+source sample.psl
+source varexptest.psl
+cat varexptest.psl
+cd..
+ls
+././slowcmd
+././slowcmd | grep -i step
+cd..
+cls
+dir
+cls
+dir
+edit *.py
+cls
+ls
+cls
+dir
+cls
+ls
+cls
+dir
+cls
+ls
+cls
+cd..
+cls
+ls
+cd pyshell
+cls
+ls
+cls
+dir
+cls
+ls
+elinks pyshell.py
+cls
+ls
+cls
+cd test
+ls
+date > date.txt
+ls
+cat date.txt
+date > date.txt
+cat date.txt
+date >> date.txt
+cat date.txt
+/bin/cat < date.txt
+rm date.txt
+cls
+exit
+ls
+dir
+help
+exit
+cls
+ls
+ls *.txt
+cd..
+/usr/bin/anjuta --help
+/usr/bin/anjuta --usage
+/usr/bin/anjuta *.py
+/usr/bin/anjuta -s *.py
+cls
+ls
+cls
+ls
+reset
+dir
+cls
+/usr/bin/anjuta *.py
+exit
+cd..
+exit
+cd..
+cls
+exit
+cls
+dir
+cls
+ls
+date > date.txt
+dir
+rm date.txt
+cls
+dir
+exit
+cd..
+cls
+dir
+vars
+vars()
+print vars()
+print vars().keys()
+vars
+ver
+cd..
+cls
+a = 5
+cls
+vars
+print a
+if a == 5: print 'yes'
+if a == 5:
+a = 5
+if a == 5:
+a = 5
+if a == 5:
+if a == 5: \
+print 'dude'
+debug
+cd..
+source loop.psl
+cd..
+debug
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'dude'
+print 'yes'
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'dude'
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'yes'
+print 'dude'
+a = 5
+if a == 5:
+print 'dude'
+print 'yes'
+a = 5
+if a == 5:
+print 'dude'
+print 'yes'
+a = 5
+if a == 5:
+print 1
+print 2
+a = 5
+if a == 5:
+print 1
+print 2
+a = 5
+if a == 5:
+print 8
+print 9
+a = 5
+if a == 5:
+print 9
+print 8
+a = 5
+if a == 5:
+print 9
+print 8
+a = 5
+if a == 5:
+print 8
+a = 5
+if a == 5:
+print 8
+a = 5
+if a == 5:
+print 8
+a = 5
+if a == 5:
+print 8
+if a == 5:
+print 8
+if a == 5:
+print 8
+a = 5
+if a == 5:
+print 8
+print 9
+debug
+if b == 5:
+print 9
+debug
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+print 9
+if b == 5:
+asdf
+a = 5
+if a < 10:
+print a
+a = a + 1
+for a in [1, 2, 3]:
+print a
+b =  [1, 2, 3]
+print b
+for a in b:
+print a
+a = 5
+while a < 10:
+print a
+a = a + 1
+a = 5
+while a < 10:
+print a
+a = a + 1
+for a in [1,2,3]:
+print a
+a = 5
+while a < 10:
+print a
+a = a + 1
+if a = 5:
+print a
+if a == 5:
+print a
+a = 5
+if a == 5:
+print a
+:b = [1,2,3]
+b = [1,2,3]
+for dude in [1,2,3]:
+print dude
+for dude in b:
+print dude
+b = [1,2,3]
+for dude in b:
+print dude
+for dude in c:
+for dude in b:
+print dude
+cls
+cd
+cls
+nautilus .
+cd..
+ls
+ls loop*
+mv loop* junk
+/bin/mv loop* junk
+cls
+ls
+cd junk
+ls
+mv loop.psl ..
+/bin/mv loop.psl ..
+cls
+ls
+cd..
+cls
+dir
+cls
+ls
+mv junk..py junk
+mv junk.py junk
+cd..
+mv junk.py junk
+cd..
+mv junk.py junk
+ls
+ls junk
+ps.opts.verbose = True
+mv junk.py junk
+cd..
+ps.opts.verbose = True
+mv junk.py junk
+debug
+mv junk.py junk
+alias
+cd..
+cls
+mv junk.py junk
+cls
+cd..
+cd junk
+ls
+cat junk.py
+cls
+cd..
+cls
+ls
+mv pyshell\ changelist.txt pyshell_chagelist.txt
+ls
+debug
+mv pyshell\ changelist.txt pyshell_chagelist.txt
+ls
+cd..
+ls
+mv pyshell\ docs.txt pyshell_docs.txt
+cls
+ls
+cd..
+cls
+ls
+cls
+ls
+cls
+ls
+echo dude
+/bin/echo dude
+a = 5
+debug
+echo a = %a
+cls
+cd..
+cls
+if a == 5:
+print 'yes'
+a = 5
+print 'yes'
+cls
+drpython *.py &
+cls
+debug
+cls
+if a == 5:
+print a
+a = 5
+if a == 5:
+print a
+if a ==5:
+print a
+while a < 10:
+print a
+a = a + 1
+ls
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+cd..
+grep exec *.py
+alias
+ps.color = False
+alias
+ps.color = False
+dir
+lsssssssssssssssssssssssssssssssssss
+cls
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+debug
+/bin/cat << DUDE
+/bin/cat << DUDE | grep as
+/bin/cat << DUDE
+grep as  << DUDE
+cls
+cd..
+ls
+mv pyshell_changelist
+mv pyshell_changelist.txt CHANGES.txt
+cls
+ls
+rm *.bak
+yes
+cls
+ls
+mv pyshell_docs.txt README.txt
+cls
+ls
+rm *.bak
+yes
+ls
+rm *.bak
+y
+cls
+ls
+cat dude.txt
+rm dude.txt
+cls
+ls
+mv loop.psl junk
+cls
+ls
+ls junk
+cls
+ls
+cls
+ls
+echo dude '' holmes
+echo dude holmes
+ls
+del CHANGES.txt.bak
+z=5
+z =5
+z = 5
+exit
+cls
+print 'ps.opts.verbose'
+print ps.opts.verbose
+print 'dude'
+vars
+pdir
+cls
+debug
+print 'ps.opts.verbose'
+print 'dude'
+print ''dude''
+print '"dude"'
+echo  '"dude"'
+print ''dude''
+debug
+print ''dude''
+echo  '"dude"'
+print '"dude"'
+/bin/cat << DUDE
+cls
+cd
+cls
+sleep 50
+sleep 50; sleep 3
+cls
+cd
+ls *.*
+cls
+ls
+cls
+python
+cls
+help commands
+cls
+cd
+cls
+exit
+acpitool
+cls
+vars
+ps
+print ps
+print pdir(ps)
+print pdir(pi)
+print pi.name
+print pi.version
+print 'pi.version'
+print 'pi.versions'
+vars
+pi
+print pi
+print pdir(pi)
+pi.version = 9
+print pi.version 
+vars
+print pdir(pi)
+print pi.version 
+pi.version = 9
+print pi.version 
+pi.version = 9
+print pi.version 
+pi.version = 9
+print pi.version 
+alias
+alias -h
+cls
+alias
+alias dude = homes
+dude
+alias
+alias -h
+dude
+alias -h
+alias
+alias dude=holmes man
+alias d
+alias dude
+alias d
+alias homey dat
+alias 
+alias h
+alias hom
+alias
+alias m
+cls
+ls
+alias
+alias m
+alias me
+alias mz
+alias mv
+cls
+cd
+cd -h
+cd..
+./pyshell -h
+ls
+./pyshell.py -h
+alias -h
+cd
+cls
+cls -h
+cls
+exit
+cls
+cls -h
+cd -h
+cls -h
+which cls
+clear
+cls -h
+debug
+cls -h
+exit
+debug
+cls -h
+clear
+cls
+alias
+alias clear=
+alias cls=
+cls
+cls -h
+alias cls=
+cls
+alias cls=
+cls
+clear
+cls -h
+cls
+alias cls=
+cls
+exit
+alias cls=
+cls
+cls -h
+debug
+echo dude
+copy
+copy -h
+pdir(optparse)
+print pdir(optparse)
+import optparse
+print pdir(optparse)
+print optparse
+cp -h
+ls
+cp
+alias -h
+mrename -h
+path
+cls
+exit
+edit /mike/config/bash-aliases
+exit
+cls
+emerge search xcopy
+cp 1 2 3
+cp 1
+cp 1 2
+cp 1 2 3
+cp 1 2
+cp 1
+cp 
+cp 1
+cp 1 2
+cp 1 2 3
+cp 1 2 3 4
+cp 1 2 3 44
+ls
+cp sample.psl sample.psl2
+ls
+rm sample.psl2
+cls
+ls
+cp sample.psl sample.psl2
+dir
+cp sample.psl2
+cls
+ls
+dir
+debug
+cp sample.psl2
+ls
+cp sample.psl2
+debug
+cp sample.psl2
+cls
+ls
+cp sample.psl2
+copy sample.psl2
+cls
+copy sample.psl2
+cd..
+copy test/sample.psl2
+ls -lrt
+rm sample.psl2
+cd test
+cls
+ls
+cd..
+copy test/sample.psl2 .
+copy test/sample.psl2
+ls -lrt
+rm sample.psl2
+cls
+cd test
+cls
+ls
+cp file:///mnt/data/documents/project/@projects/pyshell/test/sample.psl2 dude.txt
+dir
+rm dude.txt
+mkdir more
+cd more
+ls
+dir
+dir ..
+copy ../s* .
+ls
+rm *
+y
+cls
+ls
+dir
+cd..
+rmdir more
+ls
+cd..
+mkdir more
+cd more
+cp ../test .
+cd ../more
+ls
+cp ../test .
+ls
+cd ../more
+cls
+dir
+cp ../test .
+ls
+cp ../test ../more
+ls
+cp ../test ../more
+echo %ps.status
+cp ../test ../more
+print ps.status
+cd ..
+cd more
+cp ../test ../more
+echo %ps.status
+cd ..
+cd more
+cp ../test ../more
+echo %ps.status
+/bin/cat dude.txt
+echo %ps.status
+debug
+/bin/cat dude.txt
+echo %ps.status
+cp ../test ../more
+echo %ps.status
+cp ../test ../more
+echo %ps.status
+cp ../test ../more
+echo %ps.status
+cd ../more
+cp ../test ../more
+cp ../test .
+cd ../more
+cp ../test .
+ls
+ls test
+dir
+cp ../test ../more
+cp ../test ../test/*.psl  ../more
+dir
+cd ../more
+cp ../test ../test/*.psl  ../more
+dir
+ps.opts.verbose = True
+cp ../test ../test/*.psl  ../more
+cd ../more
+cp ../test ../test/*.psl  ../more
+dir
+cls
+ls
+ls test
+rm test/*
+yes
+cls
+dir
+cp *.psl test
+cd ../more
+cls
+cp *.psl test
+cd ../more
+cls
+dir
+rm test/*
+yes
+dir test
+rm test/*
+y
+cls
+dir
+dir test
+cp *.psl test
+dir test
+hist verb
+ ps.opts.verbose = True
+cp *.psl test
+ ps.opts.verbose = True
+cd ../more
+cp *.psl test
+cd ../more
+cp *.psl test
+ ps.opts.verbose = True
+cp *.psl test
+cd ../more
+ ps.opts.verbose = True
+cp *.psl test
+cd ../more
+ ps.opts.verbose = True
+cp *.psl test
+ ps.opts.verbose = True
+cd ../more
+cp *.psl test
+cp dude.txt test
+echo %ps.status
+cp dude.txt test
+cls
+cp dude.txt test
+cp -h
+cp dude.txt test
+ps.color = False
+cp dude.txt test
+ps.color = True
+help
+help apropos del
+help commands trash
+help command trash
+help trash
+help
+help tutorial
+help commands
+echo %ps.status
+/bin/echo %ps.status
+man echo
+echo %ps.status
+echo dude man
+echo dude '' man
+echo -n dude '' man
+cls
+echo
+cd
+cls
+echo -h
+echo
+echo dude holmes
+echo -n dude holmes
+echo
+echo -h
+man rm
+exit -h
+exit a
+exit 7
+md
+dir
+rm sample.psl2
+dir
+md
+dir
+md
+md -h
+md -p
+md -h
+md
+ls
+mkdir
+mkdir foo/bar
+debug
+mkdir foo/bar
+dir
+cd foo
+dir
+cd bar
+dir
+cd..
+dir
+rm -r foo
+deltree foo
+y
+cls
+ls
+cd..
+deltree more
+y
+cls
+ls
+cls
+mkdir foo/bar
+rd foo
+y
+cls
+dir
+prompt
+pwd
+cd
+cls
+exit
+cls
+cls -h
+alias c
+alias cls=
+cls -h
+cls
+clear
+cls
+help commands
+man cp
+prompt          print or change the command prompt
+cls
+print ps.opts
+deltree
+ls
+cp sample.psl .
+cp sample.psl copy.psl
+cls
+dir
+deltree copy.p
+n
+deltree copy.psl
+no
+dir
+deltree -f copy.psl
+dir
+cp sample.psl copy.psl
+dir
+deltree copy.psl
+dir
+deltree -h copy.psl
+dir
+deltree -h copy.psl
+deltree copy.psl
+dir
+deltree copy.psl
+dir
+deltree copy.psl
+y
+deltree copy.psl
+dir
+cp sample.psl copy.psl
+dir
+deltree copy.psl
+dir
+deltree copy.psl
+yes
+cp sample.psl copy.psl
+deltree copy.psl
+yes
+dir
+dir\
+yes
+which yes
+cp sample.psl copy.psl
+dir
+deltree copy.psl
+y
+cp sample.psl copy.psl
+deltree copy.psl
+y
+deltree copy.psl
+y
+cp sample.psl copy.psl
+deltree copy.psl
+deltree -f copy.psl
+cp sample.psl copy.psl
+deltree -f copy.psl
+cp sample.psl copy.psl
+deltree -f copy.psl
+cls
+alias dir=
+dir
+dir ..
+deltree -h
+history
+history -h
+history del
+man jobs
+ls
+cp sample.psl sample.psl2
+mkdir more
+dir
+mv sample.psl2 more
+alias mv=
+mv sample.psl2 more
+dir
+ls more
+cp * more
+cd more
+dir
+ls more
+dir ..
+cls
+dir
+rd more
+y
+cls
+dir
+mv * holmes
+dir
+cd more2
+dir
+mv * holmes
+alias mv=
+mv * holmes
+alias mv=
+mv * holmes
+mv -h
+mv --help
+cls
+dir
+deltree more
+y
+cls
+dir
+dir more2
+mv more2 more
+dir
+cd more
+dir
+move sample.psl dude
+dir
+rm dude
+dir
+mv varexptest.psl varexptest.psl
+dir
+mv varexptest.psl dude
+dir
+cd..
+dir
+cp *.psl more
+cd more
+dir
+mkdir sub
+mv * sub
+l = ['h']
+l = [\'h\']
+print l
+print pdir(l)
+print l.remove('h')
+print l.remove(\'h\')
+print l
+dir
+ls sub
+cd sub
+dir
+mv * ..
+dir
+cd..
+dir
+mv * sub
+dir
+cd sub
+dir
+mv * ..
+dir
+cd..
+dir
+dir sub
+dir
+mv dude sample.psl varexptest.psl sub sub
+cd sub
+dir
+mv * ..
+cd..
+dir
+dir sub
+cd more
+mv dude sample.psl varexptest.psl sub sub
+alias mv=
+mv dude sample.psl varexptest.psl sub sub
+dir
+cd..
+dir
+deltree more
+y
+dir
+pause
+pause -h
+pause 
+pause ads asldkjflasd 
+cls
+path
+pause
+pause -h
+cls
+path -h
+path
+path set foo
+path
+path set /usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/i686-pc-linux-gnu/gcc-bin/3.4.3-20050110:/usr/games/bin:/opt/vmware/bin:.:/mike/bin:/mnt/data/exec
+path pre pre
+path add post
+path del pre
+path del post
+cls
+setenv
+setenv 
+path -h
+setenv i
+path -p INFOPATH add foo
+print ps.opts
+path -p INFOPATH add foo
+ps.opts.verbose = True
+path -p INFOPATH add foo
+path -p INFOPATH
+path -p INFOPATH del foo
+path -p INFOPATH
+path -p INFOPATH add foo
+path -p INFOPATH del foo
+path -p INFOPATH add foo
+path -p INFOPATH del foo
+path -p INFOPATH add foo
+path -p INFOPATH del foo
+path -h
+path -p INFOPATH del foo
+cls
+prompt
+prompt -h
+alias
+alias py
+alias load
+alias l
+alias path
+setenv path
+setenv info
+setenv q
+setenv
+setenv pag
+lsmod
+setenv pag
+setenv
+setenv -h
+setenv ls
+setenv foo
+ps.opts.verbose = False
+setenv foo
+ps.opts.verbose = True
+ps.opts.verbose = Tr
+setenv foo
+setenv -h 
+set DAY mon
+setenv DAY mon
+setenv da
+setenv DAY=tues
+setenv day
+setenv DAY = wed
+setenv day
+setenv DAY =Thurs
+setenv day
+setenv DAY= fri
+setenv day
+history
+setenv
+history
+setenv DAY mon
+setenv DAY=tues
+setenv DAY=
+setenv DAY =Thurs
+setenv DAY= fri
+setenv DAY = wed
+setenv day
+setenv DAY = wed
+setenv DAY =
+setenv day
+setenv DAY mon
+setenv DAY=tues
+setenv DAY = wed
+setenv DAY =Thurs
+setenv DAY= fri
+setenv DAY= 
+setenv DAY= fri
+setenv DAY =
+setenv DAY= fri
+setenv DAY =
+cls
+setenv -h
+setenv
+cls
+dir
+setenv
+setenv DAY mon
+cls
+dir
+setenv
+pwd
+ pwd -h
+man pwd
+signal
+signal -h
+cls
+signal -h
+gedit &
+sig
+sig term 15608
+gedit &
+cls
+gedit &
+cls
+gedit &
+alias q
+alias cls
+alias cls=
+alias cls
+cls
+alias q
+py dude
+py dude holmes
+py -q dude holmes
+debug
+py -q dude holmes
+py dude holmes
+py -q smack dude holmes homey
+py a = 5
+py 
+py -h
+py -q dude.{a,b,c,d,e}.jpg
+py dude.{a,b,c,d,e}.jpg
+debug
+py dude.{a,b,c,d,e}.jpg
+py print dude.{a,b,c,d,e}.jpg
+py write dude.{a,b,c,d,e}.jpg
+py -q  write dude.{a,b,c,d,e}.jpg
+py
+signal
+prompt
+md
+cp
+source
+dir
+source sample.psl
+cls
+cd..
+dir
+cd..
+cls
+ls
+././backup
+././backup 088h
+ls -lrt
+exit
+ls
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz dude.gz
+cls
+dir
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz dude.gz
+ls
+dir
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz dude.gz
+ls
+rm dude.gz
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz dude.gz
+dir
+rm dude.gz
+cp http://distfiles.gentoo.org/distfiles/wxPythonDemo-2.4.2.4.tar.gz dude.gz
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz dude.gz
+dir
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz dude.gz
+ps.color = False
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz dude.gz
+ps.color = False
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz dude.gz
+cls
+import urlparse
+print urlparse.urlparse('http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz')
+print urlparse.urlparse(\'http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz\')
+dir
+rm dude.gz
+cls
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz .
+dir
+rm poppler-0.4.2.tar.gz
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz 
+cls
+dir
+rm poppler-0.4.2.tar.gz
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz dude.gz
+dir
+rm dude.gz
+cls
+exit
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz 
+dir
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz 
+cd..
+ls
+cd..
+dir
+cls
+ls
+debug
+drpython *.py >>e> /dev/null   & 
+drpython *.py >e>> /dev/null   & 
+drpython *.py > /dev/null >e> /dev/null   & 
+exit
+cls
+hist drpy
+cd..
+cls
+ls
+debug
+cd..
+cls
+emerge search python-docs
+exit
+ver
+ver -h
+ver
+vars
+which
+which -h
+which 
+which dude
+which del
+cls
+dir
+ver
+info
+cls
+ls
+help commands
+alias
+setenv
+cls
+history hist
+history verb
+cls
+history
+cls
+cd..
+cd test
+dir
+signal
+signal list
+cls
+cd
+exit
+ls
+source sample.psl
+cat sample.psl
+edit test
+edit sample.psl
+dir
+source
+source -h
+signal
+sig -h
+sig -h akdjk ksdjfkj kdfj
+sig akdjk ksdjfkj kdfj -h 
+source  akdjk ksdjfkj kdfj -h 
+dir
+ls ~/.Trash
+dir
+mkdir mike
+cd mike
+dir
+touch dude.{a,b,c,d}
+dir
+cd mike
+dir
+trash *
+y
+trash *
+yes
+debug
+trash *
+yes
+trash *
+yes
+dir
+mv /home/mgmiller/.Trash/* .
+unalias mv
+alias mv=
+mv /home/mgmiller/.Trash/* .
+dir
+cd mike
+dir
+ls
+trash *
+yes
+cls
+dir
+ls
+hist touch
+ touch dude.{a,b,c,d}
+ls
+trash * -h
+dir
+type dude.a
+type
+type -h
+dir
+rm mike
+rmdir mike
+deltree mike
+yes
+cls
+dir
+ver dkjkadjf 
+ver dkjkadjf -h
+ls
+vars
+a = 5
+vars
+a = 5
+vars
+a = 5
+vars
+a = 5
+vars
+a = 5
+vars
+b = 2
+vars
+b = 2
+a = 5
+vars
+a = 5
+b = 2
+vars
+a = 5
+b = 2
+vars
+a = 5
+b = 2
+vars
+a = 5
+b = 2
+vars
+print pi
+print pi.keys()
+print pi.version
+print pi.name
+cls
+vars
+vars -h
+cls
+which
+which foo
+which which
+which print
+which yeild
+which yield
+cls
+which 1 2 3
+which foo print which
+which foo print which su
+cls
+dir
+setspeed
+setspeed a
+cls
+ls
+cp sample.psl dude
+dir
+cp sample.psl dude
+dir
+ll
+ls -l
+rm dude
+cls
+dir
+cp sample.psl dude
+dir
+ls
+deltree dude
+dir
+deltree dude
+no
+deltree dude
+n
+deltree dude
+no
+dir
+deltree dude
+y
+cp sample.psl dude
+dir
+deltree dude
+no
+deltree -f dude
+dir
+echo -h
+echo holmes
+echo -h
+echo holmes
+echo holmes '' dude
+echo holmes dude
+echo dude -n
+echo
+echo -n
+ls
+cp sample.psl dude.txt
+dir
+rm -h
+ls
+rm *.txt
+no
+rm 
+rm *.txt
+no
+rm *.txt
+no
+dir
+rm *.txt
+yes
+dir
+cp sample.psl dude.txt
+dir
+erase dude.txt
+dir
+rm -f *.txt
+print ps.status
+debug
+ps.opts.debug = True
+print ps.opts.debug 
+rm -f *.txt
+dir
+exit
+dir
+cp sample.psl dude.txt
+rm -f *.txt
+dir
+exit -h
+exit A
+exit -h
+exit A
+exit A
+print ps.status
+exit 9
+ls /root
+ll /root
+print ps.status
+help
+help commands
+help keywords
+help keywords try
+history
+history key
+history dir
+dir
+history
+history verb
+history
+hist root
+hist -h
+mf holmes dude/holmes
+dir
+ls -l
+ls mf
+cd mf
+dir
+ls
+cd..
+alias
+cd holmes
+dir
+cd ..
+ls
+cd holmes
+dir
+ls
+cd..
+cd dude
+ls
+cd holmes
+ls
+cd..
+rm -r mf holmes dude
+deltree  mf holmes dude
+y
+cls
+dir
+cls
+dir
+l = ['a']
+l = [\'a\']
+print dir(l)
+print dir(l.remove)
+print l.remove.__doc__
+l.remove(\'a\')
+md
+md mike
+cd /root
+mkdir mike
+cd /root
+mkdir aasdfasdf
+cd /
+mkdir asdflkjasdf
+rm asdflkjasdf
+deltree asdflkjasdf
+yes
+cls
+ls
+cd etc
+dir
+mkdir mike
+cd /etc
+mkdir mike
+cd
+dir
+deltree mike
+y
+cls
+dir
+mv
+pause
+ddsf
+pause
+path
+setenv
+set
+env
+path -h
+path -u INFOPATH
+path 
+path -u INFOPATH dude
+path -u INFOPATH dude holmes
+path -u INFOPATH pre holmes
+path -u INFOPATH del holmes
+path 
+prompt 
+prompt 'holmes> ' 
+ps.color = False
+prompt '"holmes> "' 
+pwd
+cd
+cd documents
+pwd
+pwd -r
+py print '"holmes"'
+py -h
+setenv
+setenv dude holmes
+setenv d
+du
+setenv du
+setenv dude=
+setenv du
+setenv dude=
+signal
+signal list
+signal
+source
+source -h
+dir
+deltree aasdfasdf
+y
+cls
+dir
+cp sample.psl dude.txt
+dir
+trash
+dir
+trash
+trash -h
+trash dude.txt
+dir
+debug
+trash dude.txt
+dir
+cp sample.psl dude.zip
+trash dude.zip
+cls
+dir
+type sample.psl
+type sample.psl varexptest.psl
+echo dude > dude.txt
+dir
+type sample.psl dude.txt
+type sample.psl 
+type sample.psl -
+vars
+a = 5
+vars
+a = 5
+vars
+a = 5
+vars
+a = 5
+vars
+import optparse
+vars
+d = { 1:'dude', 2:'holmes'}
+d = { 1:2, 2:1}
+vars
+d = { 1:2, 2:1}
+vars
+d = { 1:2, 2:1}
+a = 5
+vars
+a = 5
+d = { 1:2, 2:1}
+a = 5
+vars
+a = 5
+d = { 1:2, 2:1}
+a = 5
+vars
+alias
+vars
+alias
+vars
+d = { 1:2, 2:1}
+a = 5
+s = '"dude"'
+vars
+a = 5
+s = '"dude"'
+vars
+alias
+s = '"dude"'
+vars
+alias
+setenv
+vars
+s = '"dude"'
+a = 5
+d = { 1:2, 2:1}
+vars
+which
+which dude
+which which
+which holmes
+which which holmes print uniq
+cls
+exit
+alias
+dir
+ls
+alias -gh
+alias -h
+cls
+dir
+ls
+alias 
+alias > mike.txt
+dir
+edit mike.txt
+cat mike.txt
+alias > mike.txt
+dir
+cat mike.txt
+alias > mike.txt
+cat mike.txt
+alias > mike.txt
+cat mike.txt
+rm mike.txt
+alias > mike.txt
+dir
+rm -q mike.txt
+dir
+rm -v mike.txt
+rm -v dude.txt
+ps.opts.verbose = False
+alias > mike.txt
+dir
+rm mike.txt
+alias > mike.txt
+dir
+rm -q mike.txt
+dir
+rm -v mike.txt
+alias > mike.txt
+dir
+rm -v mike.txt
+cls
+emerge -u world -D -a 
+cd..
+exit
+cd..
+mv pyshell.py junk
+man mv
+alias m
+which mv
+mv pyshell.py junk
+cd..
+mv pyshell.py junk
+cls
+dir
+cls
+ls
+ls pyshell
+ls junk
+cls
+ls
+rm *.pyc
+yes
+cls
+ls
+mv bashrules.txt junk
+cls
+ls
+cat slowcmd
+cls
+ls
+mv slowcmd test
+cls
+ls
+cd junk
+ls
+cls
+ls
+mv loop* ../test
+cls
+ls
+cd..
+cls
+ls
+mkdir lib
+mv *.py lib
+cls
+ls
+ drpython pyshell ./lib/*.py  > /dev/null  &
+drpython pyshell ./lib/*.py  > /dev/null  &
+which drpython
+exit
+cls
+ls
+cd..
+cls
+ls
+setenv | grep mgmiller
+cd..
+ls
+cd con
+cd conf
+cls
+ls
+cat login.psl
+cp  login.psl ~/.pyshell/
+exit
+cls
+ls
+cls
+ls
+cls
+cd..
+ls
+mkdir mlib
+rmdir mlib
+ln -s /mike/lib mlib
+cls
+dir
+mkdir mlib
+cd..
+ls
+edit backup
+cd pyshell
+cls
+ls
+rm mlib
+print ps.status
+rm mlib
+print ps.status
+exit
+cls
+exit
+cd
+cls
+exit
+setenv
+exit
+cd..
+dir
+cd mlib
+dir
+cp /mike/lib/*.py
+nautilus .
+dir
+cp * /mike/lib/
+cd /mike/lib
+dir
+mkdir old
+mv *pyc old
+mv *pyo old
+dir
+cat powerlib.py
+ls -lrt
+cat fdlib.py
+dir
+rm extcache.py
+cls
+dir
+exit
+cls
+info
+cls
+cd..
+hist drpy
+help
+help commands help
+help commands pwd
+help commands
+alias
+alias p
+alias py
+alias
+alias 123456789 dude
+alias
+alias py
+alias
+alias aadfasdfasdasdf asdfasdsdf
+alias
+alias py
+alias
+alias py
+alias q
+setenv
+setenv ssh
+setenv user
+setenv py
+vars
+akdsflasdfsdfdf = 5
+vars
+akdsflasdfsdfdfadfasdf = 5
+vars
+del akdsflasdfsdfdf
+del akdsflasdfsdfdfadfasdf
+vars
+a = 5
+vars
+b = [1]
+vars
+exit
+emerge search thunderbird
+cd /usr/portage/mail-client
+cd mozilla-thunderbird
+dir
+cls
+cd
+cls
+pyshell
+ver
+./pyshell.py
+pwd
+dir
+rm dude.gz
+history popp
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz
+dir
+cp http://distfiles.gentoo.org/distfiles/poppler-0.4.2.tar.gz
+cd..
+cls
+dir
+help commands
+man python
+a = 5
+vars
+print 'dude'
+print dude
+py print dude
+py
+py -h
+py print 'dude'
+py -q print dude
+debug
+py -q print dude
+alias
+debug
+free
+cls
+dir
+ls
+././TEST_SUITE.py
+cd..
+dir
+cp README.txt README.txt2
+dir
+rm README.txt
+cls
+setenv
+alias
+dir
+x pyshell.py
+dir
+mv README.txt2 README.txt
+cls
+dir
+cls
+cd..
+dir
+./backup_ps
+./backup_ps 090b
+cls
+dir
+rm pyshell.09b.zip
+rm pyshell.090b.zip
+cls
+rm dude.
+dir
+cd pyshell
+dir
+cd test
+dir
+rm poppler-0.4.2.tar.gz
+cd...
+dir
+!back
+backup_ps
+dir
+./backup_ps 090b
+dir
+hist back
+pyshell
+cat /proc/asound/version
+su -
+ver
+cls
+ver
+alias b
+bat
+edit /mike/config/bash-aliases
+alias bat='cat /proc/acpi/battery/BAT1/{info,state}'
+alias b
+debug
+print ps.opts.debug
+ps.opts.debug = True
+alias bat='cat /proc/acpi/battery/BAT1/{info,state}'
+cd..
+cd conf
+dir
+cd..
+cd conf
+dir
+edit *.psl
+replace ps. po. -- *.psl
+cd..
+pyshell
+cls
+cd
+cls
+ver
+exit
+cls
+ver
+bat
+alias b
+ver
+cd
+cls
+help commands
+pause
+ver
+which
+cl
+cls
+alias
+exit
+cd..
+cd conf
+dir
+edit login.psl
+alias
+alias d
+debug
+edit /mike/config/bash-aliases
+exit
+cls
+debug
+alias d
+df
+free
+cd..
+debug
+po.opts.debug = True
+alias debug
+debug
+exit
+debug
+a = 5
+debug
+cd
+exit
+debug
+ver
+cls
+ifconfig
+cls
+alias
+cls
+alias
+setenv
+cls
+cd..
+dir
+pyshell.py
+ver
+cls
+po.opts.debug = True
+print pdir()
+debug
+print pdir()
+ver
+exit
+a 
+a = 5
+vars
+print ps.namespace
+print po.namespace
+debug
+vars
+a = 5
+vars
+a
+os
+sys
+posix
+import posix
+posix
+exit
+setenv sh
+setenv 
+cls
+cd
+exit
+alias
+setenv
+cls
+ls
+setenv
+cls
+cd
+exit
+cls
+dir
+cls
+dir
+././TEST_SUITE.py
+cls
+././TEST_SUITE.py
+cd..
+cls
+ls
+ls test
+ver
+print 'dude'
+cd test
+dir
+././slowcmd 
+dir
+z = 5
+print 'z = %s' % z
+echo "the value of z is: %z"
+pi.sym_expansion = '$'
+exit
+z = 5
+print z
+z=6
+print z
+print 'z = %s' % z
+echo "the value of z is: %z"
+po.sym_expansion = '$'
+echo "the value of z is: %z"
+debug
+po.sym_expansion = '%'
+echo "the value of z is: %z"
+debug
+po.opts.debug = True
+debug
+dir
+cls
+ls
+dir
+print 'dude_{a,b}'
+py print 'dude_{a,b}'
+debug
+py print 'dude_{a,b}'
+py print '"dude_{a,b}"'
+py print \""dude_{a,b}"\"
+exit
+dir
+cd glob
+dir
+dir 
+dir *
+cls
+cd..
+dir
+cls
+help
+help keywords
+help keywords and
+help tutorial
+cd..
+cls
+dir
+cd ..
+dir
+cat backup_ps
+dir
+././backup_ps 090d
+dir
+cls
+exit
+cd..
+cls
+dir
+./test/TEST_SUITE.py 
+cd test
+./TEST_SUITE.py
+cat test_suite.py
+cls
+cd..
+cls
+dir
+cd..
+grep w32 *.py ./lib/*.py
+debug
+cd..
+dir
+cd ..
+dir
+unzip -t pyshell.090d.zip
+unzip -t /mnt/data/pyshell.090d.zip
+dir
+cls
+cd pyshell
+dir
+hist drpy
+bat
+cls
+exit
+echo dude
+exit
+echo dude
+exit
+ver
+exit
+echo dude
+ver
+exit
+ver
+echo dude
+dir
+alias
+cls
+dir
+cd..
+cd ..
+dir
+cd ..
+dir
+exit
+cls
+cd ..
+cls
+dir
+exit
+ver
+exit
+ver
+exit
+cd..
+exit
+setenv
+exit
+bat
+cls
+ver
+cls
+dir
+cd..
+cls
+help commands
+help commands path
+help commands
+help commands path ver
+help commands
+bat
+cls
+help
+help commands path
+help keywords
+help keywords raise
+help 
+help modules
+help modules os
+help modules wx
+help modules wxpy
+help modules sys
+help
+help topics
+help topics slicings
+help topics SHIFTING
+help modules sys
+help dufus
+help modules sys wxpy
+help commands paths
+help commands path
+help apropos del
+bat
+help apropos del
+bat
+help apropos del
+cls
+cd..
+ver
+help apropos del
+help sys
+help if
+help
+help topics
+help sys
+help if
+cls
+if
+exit
+cls
+cd..
+cls
+dir
+cls
+ls
+help tutorial
+emerge search mozilla
+equery f mozilla-launcher
+edit /usr/libexec/mozilla-launcher
+which firefox
+/usr/bin/firefox /usr/share/doc/python-docs-2.4.2/html/tut/tut.html
+help tutorials
+help tutorial
+help tutorials
+help tutorial
+firefox --help
+help
+help topics
+help topics LOOPING
+help help
+help modules spam
+help help
+keywords
+bat
+cls
+ver
+help
+help commands
+help commands pause
+help commands
+help
+help tutorial
+which mozilla
+help tutorial
+help tutorial /usr/bin/mozilla
+help tutorial
+help tutorial /usr/bin/mozilla
+help tutorial
+help tutorial /usr/bin/mozilla
+alias ed
+alias v
+bat
+cls
+cd
+cd options
+dir
+cd system/current
+dir
+find -name conview
+cd console/prefapp/cmds
+dir
+cp conview conview_html
+cp guiview guiview_html
+dir
+edit conview_html guiview_html
+which elinks
+/mike/bin/prefapp
+help
+help tutorial
+help tutorial /usr/bin/elinks
+help tutorial /usr/bin/elinks W,#W,qq
+cscls
+cls
+help tutorial
+help tutorial /usr/bin/elinks
+help tutorial /usr/bin/elinksqqcls
+help tutorial /usr/bin/elinks
+ 5'#5'
+cls
+help
+help commands
+help commands quit
+help commands quits
+help
+help modules
+help modules zlib
+help
+help topics
+help unicode
+help UNICODE
+cls
+help
+help keyword
+help keywords
+help
+help help
+help
+help apropos dude
+help apropos unicode
+help apropos del
+help apropos echo
+help apropos disp
+cls
+help
+help modules sys
+help
+ver
+help tutorial
+q
+hist pref
+prefapp -tview /usr/share/doc/python-docs-2.4.2/html/tut/tut.html
+setenv dis
+prefapp -tview /usr/share/doc/python-docs-2.4.2/html/tut/tut.html
+help tutorial
+ver
+sync
+dir
+cd..
+dir
+ls mlib
+dir lib
+cls
+cd..
+dir
+cd pyshell
+dir
+cls
+ls
+help
+help modules opt
+help optparse
+cls
+help
+exit
+cd
+exit
+ver
+free
+cls
+exit

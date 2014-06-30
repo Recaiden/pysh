@@ -1,0 +1,110 @@
+Hacking on pyshell
+--------------------
+
+    Patches
+    --------------------
+
+    Common sense open source policy says try not to make these too big.  Probably 
+    a good idea to mail me before implementing anything large scale, to see if we 
+    agree on how to proceed.
+
+    Coding/whitespace Style
+    --------------------
+    I generally follow Guido's style guide, with one exception.  I like to line 
+    up things like comments and if statements so they start at the same column.  
+    So sue me.  ;)
+
+
+    Unit testing
+    --------------------
+    There is the beginning of a unit test frame work in the test directory.  Here 
+    I'd like to have a complete suite of tests to run after making any changes to
+    the source in order to find bugs quickly.
+
+
+Structural Overview of Pyshell
+--------------------------------
+
+Here is a tour of the various files used by pyshell.  They are listed in
+the order they are loaded/needed.
+
+
+Core scripts/libs (*.py ./lib/*.py)
+------------------------
+
+pyshell
+    Simple start up script.
+    
+    - Checks correct python version
+    - Checks to make sure config files are installed, if not attempts to install
+        them.
+    - Loads ps_main and then starts the pyshell main loop
+    
+    
+ps_main
+    The main read & execute loop for pyshell
+    
+    - Loads ps_init module (See below)
+    - Loops thru config files unless bypassed with --faststart option.
+    - Loops thru files on disk if given at command line
+    - If no files given, starts and interactive session and reads from input. 
+        - determines if line is a pyshell statement, a python statement, or a call
+            system binary and executes acordingly. 
+
+ps_init
+    Initializes needed variables for ps_main
+
+    - Loads ps_cfg objects directly into ps_main namepace (see below)
+    - Loads python and ps_* (see below) support modules directly into ps_main 
+        namespace.  
+
+ps_cfg
+    Pyshell information (pi) and configuration options (po) objects are defined
+    here.  
+    
+    - pi contains read-only run-time info
+    - po contains options changeable by the user and changeable run-time info
+        Very important, used heavily in all areas of prog. 
+
+ps_builtins
+    All of the shell's builtin commands are implemented here, and derived from
+    the console app base class in cmdbase (see below).
+
+ps_interactive
+    Interactive session, prompt, readline lib, and tab-completion implemented 
+    here.
+    
+ps_interpreter
+    Most shell expansions implemented here.
+
+ps_lib
+    Grab bag of reusable functions.  Many removed to streamline code in other
+    places.
+
+
+
+Mike's General Libs (./mlib/*.py)
+-------------------- 
+cmdbase
+    Base class that all builtin commands are derived from.  Behaviors defined here
+    will be shared by all builtin commands.
+    
+    Moved into separate lib so that external console programs can inherit
+    functionality.
+
+ansi
+    General terminal output routines
+    
+
+Other Stuff (./lib/*.py)
+-------------
+fromipy
+    Various cool things I'd like copy from ipython.  Not much there yet since
+    ipython source is difficult to grok.
+    
+openanything
+    Mark Pilgim's cool lib From "Dive into Python" to open almost anything as
+    a file.  
+
+makedocs.py
+    Generates the builtins.html document from the source code.

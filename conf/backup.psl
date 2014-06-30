@@ -1,0 +1,23 @@
+
+# this is the pyshell user's init script
+# put all settings needed for the end user here
+
+# if login shell execute this:  (should be done once)
+
+echo -n Hi, Mike  (loading user init script) ...
+echo Done
+
+print 'dude'
+print dir()
+print po.audio
+po.audio = False
+ver
+
+cd test
+
+po.audio = True
+
+alias e echo
+alias n notepad &
+
+# po.opts.verbose = True

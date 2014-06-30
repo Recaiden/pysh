@@ -1,0 +1,19 @@
+#!/usr/bin/python /mnt/data/documents/project/@projects/pyshell/pyshell.py $*
+
+# this is a comment
+echo
+echo parameters: %0%1%2 "%3" "%4" "%5" "%6" "%7"
+echo all: %*
+echo %111222
+
+print 'po.opts.verbose:', po.opts.verbose
+po.opts.verbose = True
+
+a = 99.95
+
+echo this cost me %a !!!
+
+#pause
+
+print po.namespace.keys()
+print po.namespace['*']
