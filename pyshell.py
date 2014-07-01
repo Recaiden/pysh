@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/python
 ''' pyshell - a python based interactive shell that needs a lot of work.
     by Mike Miller 2004-2006
     This file kept intentionally short to speed loading.
@@ -17,7 +17,6 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 '''
-
 import sys
 if (sys.version_info[0]*10 + sys.version_info[1]) < 24:
     print 'Error: pyshell requires python 2.4 or greater.'; sys.exit(1)
@@ -26,7 +25,10 @@ if (sys.version_info[0]*10 + sys.version_info[1]) < 24:
 import os, os.path
 dirname = os.path.abspath(os.path.dirname(sys.argv[0])) + os.sep
 sys.path += [dirname + 'lib', dirname + 'utils']     # find our files
-os.environ['PATH'] += os.pathsep + dirname + 'utils' # a bug here, adds on every exec
+
+pathAdding = os.pathsep + dirname + 'utils'
+if pathAdding not in os.environ['PATH']:
+    os.environ['PATH'] += pathAdding # a bug here, adds on every exec
 os.environ['PYSHELL_OPTIONS'] = dirname + 'conf/options/'.replace('/', os.sep)
 
 import ps_lib
@@ -36,4 +38,9 @@ import ps_main
 ps_lib.check_config()
 
 # Start up pyshell
-ps_main.startup()
+try: 
+#This exists becuase if you do cd ` then you get an exception. This fixes that....a better solution would be to change all the parsing to something that accounts for that
+    ps_main.startup()
+except IndexError as e:
+    sys.stderr.write("An index error returned!")
+    ps_main.startup()
